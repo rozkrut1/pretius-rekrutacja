@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+providers:
+  nbp:
+    url: 'http://api.nbp.pl/api/'
+
+converter:
+  scale: 4
+  rounding_mode: 5
+
+cache:
+  nbp:
+    name: nbpAvgPrice
+    cron: 0 0 12 * * *
